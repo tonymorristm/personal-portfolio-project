@@ -1,0 +1,37 @@
+/** {
+  border: 2px solid red;
+}*/
+
+nav {
+  border: 1px solid blue;
+  background: grey;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.home-page {
+  height: 950px;
+  width: 100%;
+  background: #ffa949 url('../images/roadway.jpg') no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  /*background: grey;*/
+}
+
+.portfolio-page {
+  height: 950px;
+  background: #cccccc center fixed;
+}
+
+.about {
+  height: 950px;
+  width: 100%;
+  background: #ffa949 url('../images/meadowlake.jpg') no-repeat center fixed;
+}
+
+.contact {
+  height: 950px;
+  background: #cccccc center fixed;
+}
