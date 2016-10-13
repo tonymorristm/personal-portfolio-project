@@ -28,7 +28,7 @@ nav {
 .about {
   height: 950px;
   width: 100%;
-  background: #ffa949 url('/images/meadowlake.jpg') no-repeat center fixed;
+  background: #ffa949 url('https://tonymorristm.github.io/personal-portfolio-project/images/meadowlake.jpg') no-repeat center fixed;
 }
 
 .contact {
