@@ -13,7 +13,7 @@ nav {
 .home-page {
   height: 950px;
   width: 100%;
-  background: #ffa949 url('../images/roadway.jpg') no-repeat center fixed;
+  background: #ffa949 url('./images/roadway.jpg') no-repeat center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ nav {
 .about {
   height: 950px;
   width: 100%;
-  background: #ffa949 url('../images/meadowlake.jpg') no-repeat center fixed;
+  background: #ffa949 url('./images/meadowlake.jpg') no-repeat center fixed;
 }
 
 .contact {
