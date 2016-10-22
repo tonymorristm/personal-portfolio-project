@@ -4,58 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
   <title>Personal Portfolio Project</title>
 </head>
 <body>
   <header>
+    <div class="brand">
+      <a class="brand-title" href="#">Tony Morris</a>
+      <p class="brand-text">Personal Portfolio</p>
+    </div>
     <nav>
-      <a class="brand" href="#">Tony Morris</a>
-      <p class="text">Personal Portfolio Project</p>
       <ul>
-        <li>Home</li>
-        <li> <a href="#portfolio">Portfolio</a> </li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-
     </nav>
   </header>
+
   <div class="page-container">
     <div class="home-page">
-      <!-- <img src="images/roadway.jpeg" alt="photo of road leading up to mountains"> -->
       <h1>Tony Morris</h1>
       <h3>Web Developer</h3>
-      <button>Twitter</button>
-      <button>freeCodeCamp</button>
-      <button>GitHub</button>
+      <div class="test">
+      <a href="https://twitter.com/tonymorristm" class="social twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> Twitter</a>
+      <a href="https://freecodecamp.com/tonymorristm" class="social fcc" target="_blank"><i class="fa fa-fire fa-2x" aria-hidden="true"></i> freeCodeCamp</a>
+      <a href="https://github.com/tonymorristm" class="social github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> GitHub</a>
+      </div>
     </div><!-- home-page -->
 
     <div class="portfolio-page" id="portfolio">
-      <div class="content-container">
-        <h2>Portfolio</h2>
+      <div class="portfolio-content">
+        <h2>PORTFOLIO</h2>
+        <hr class="separator">
         <h3>Some of the projects I will be working on...</h3>
+          <div class="projects">
+            <figure class="project cap-left"><a href="http://codepen.io/tonymorristm/full/NxJwJq/" target="_blank"><img src="images/RandomQuoteMachine.png"></a><figcaption>Random Quote Machine</figcaption></figure>
+            <figure class="project cap-left"><img src="https://unsplash.it/350/300?image=26" class="project"><figcaption>JavaScript Calculator</figcaption></figure>
+            <figure class="project cap-left"><img src="images/IMG_4035.jpg" class="project"><figcaption>Pomodoro Clock</figcaption></figure>
+            <figure class="project cap-left"><img src="images/ShowLocalWeather.jpg" class="project"><figcaption>Show Local Weather</figcaption></figure>
+            <figure class="project cap-left"><img src="https://unsplash.it/350/300?image=80" class="project"><figcaption>Tic Tac Toe Game</figcaption></figure>
+            <figure class="project cap-left"><img src="https://unsplash.it/350/300?image=120" class="project"><figcaption>Simon Game</figcaption></figure>
+
+          </div>
       </div>
+
     </div><!-- portfolio -->
 
-    <div class="about">
-      <h2>About</h2>
-      <h1>Hey, I'm Tony</h1>
-      <p>I began my web development journey in earnest by joining Free Code Camp in March of 2015. As with most newbies, I continually look for the best path to take in my quest for coding knowledge. In the fall of 2015, I made a change and started down the Rails path, thinking I had finally found the best past at last. I did learn alot during the 3-4 months I spent with Rails. However, I realized that the Rails path I was on did not have a clearly defined path like FCC laid out with their learning path and end goals. After looking thru the updated curriculum Quincy Larson and team had pushed up in December 2015 and January 2016, I realized the path I was on originally was the best path for me. So in January, of this year 2016, I made a committment to begin working thru the FCC curriculum again. I realize it's going to be hard at times (actually it already has been at times) but my plan is to complete as much of the curriculum as I can in 2016.</p>
+    <div class="about" id="about">
+      <!-- <h2>About</h2> -->
+      <div class="about-me-box">
+        <h2>Hey, I'm Tony</h2>
+        <hr class="separator-about">
+        <p>I began my web development journey in earnest by joining Free Code Camp in March of 2015. As with most newbies, I continually look for the best path to take in my quest for coding knowledge. In the fall of 2015, I made a change and started down the Rails path, thinking I had finally found the best past at last. I did learn alot during the 3-4 months I spent with Rails. However, I realized that the Rails path I was on did not have a clearly defined path like FCC laid out with their learning path and end goals. After looking thru the updated curriculum Quincy Larson and team had pushed up in December 2015 and January 2016, I realized the path I was on originally was the best path for me. So in January, of this year 2016, I made a committment to begin working thru the FCC curriculum again. I realize it's going to be hard at times (actually it already has been at times) but my plan is to complete as much of the curriculum as I can in 2016.</p>
+      </div>
     </div><!-- about -->
 
-    <div class="contact">
-      <h2>Contact</h2>
+    <div class="contact" id="contact">
+      <!-- <h2>Contact</h2> -->
       <h2>@Tony Morris</h2>
-      <button>Twitter</button>
-      <button>freeCodeCamp</button>
-      <button>GitHub</button>
-      <button>Instagram</button>
+      <hr class="separator-contact">
+      <a href="https://twitter.com/tonymorristm" class="social-contact twitter" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+      <a href="https://freecodecamp.com/tonymorristm" class="social-contact fcc" target="_blank"><i class="fa fa-fire fa-2x" aria-hidden="true"></i></a>
+      <a href="https://github.com/tonymorristm" class="social-contact github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/tonytm" class="social-contact instagram" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
     </div><!-- contact -->
 
   </div><!-- page-container -->
 
-  <footer>&copy; 2016 Tony Morris</footer>
+  <footer class="text-right">&copy; 2016 <em>by</em> <a href="https://twitter.com/tonymorristm">Tony Morris</a></footer>
 
 </body>
 </html>

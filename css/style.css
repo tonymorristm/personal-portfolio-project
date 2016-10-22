@@ -2,14 +2,69 @@
   border: 2px solid red;
 }*/
 
-nav {
-  border: 1px solid blue;
-  background: grey;
+body {
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: white;
   position: fixed;
   top: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-around;;
 }
 
+nav {
+   display: flex;
+  /*flex: 3;*/
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 330px;
+
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+
+nav a {
+  margin: 0 10px;
+  color: #777;
+  padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  /*flex: 1;*/
+  margin-left: 380px;
+  margin-right: auto;
+}
+
+.brand-title {
+  color: black;
+  font-size: 1.875rem;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.brand-text {
+  font-size: .9rem;
+  margin: auto;
+  padding-left: 8px;
+  color: grey;
+  /*padding-top: 6px;*/
+}
 
 .home-page {
   height: 950px;
@@ -17,23 +72,227 @@ nav {
   background: #ffa949 url('https://tonymorristm.github.io/personal-portfolio-project/images/roadway.jpg') no-repeat center fixed;
   background-size: cover;
   margin: 0;
-  /*padding: 0;*/
   padding-top: 200px;
-  /*background: grey;*/
+  margin: auto;
+  text-align: center;
 }
 
-.portfolio-page {
-  height: 950px;
-  background: #cccccc center fixed;
+.home-page h1 {
+  font-size: 5rem;;
+  color: white;
+  text-align: center;
+  font-weight: 500;
 }
+
+.home-page h3 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.social {
+  border: 2px solid black;
+  background: rgba(184, 185, 191, 0.7);
+  border-radius: 6px;
+  font-size: 20px;
+  color: black;
+  margin: 4px;
+  padding: 10px 12px;
+
+}
+
+.twitter:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.fcc:hover {
+  background: #006400;
+  color: white;
+}
+
+.github:hover {
+  background: #333333;
+  color: white;
+}
+
+.instagram:hover {
+  background: #3f729b;
+  color: white;
+}
+
+/*
+#portfolio {
+  display: inline-block;
+  margin-top: 45px;
+}*/
+
+.portfolio-page {
+  height: 850px;
+  background: #cccccc center fixed;
+  margin-top: 0px;
+	/*padding-top: 40px; /* since the header is fixed, this keeps page from scrolling behind header */*/
+	padding-bottom: 50px;
+	margin-bottom: 0px;
+}
+
+.portfolio-content {
+  width: 60%;
+  margin: auto;
+}
+
+.portfolio-content h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+  padding-top: 25px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.portfolio-content h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-around;*/
+}
+
+.project {
+  /*flex-grow: 1*/
+  margin: auto;
+}
+
+img {
+	width: 350px;
+	height: 300px;
+  padding-bottom: 30px;
+}
+
+
+.separator {
+  border-bottom: 4px solid black;
+  width: 265px;
+  margin-left: 0;
+}
+/*
+#about {
+  display: inline-block;
+  margin-top: 155px;
+}*/
+
 
 .about {
   height: 950px;
   width: 100%;
   background: #ffa949 url('https://tonymorristm.github.io/personal-portfolio-project/images/meadowlake.jpg') no-repeat center fixed;
+  padding-top: 90px; /* since the header is fixed, this keeps page from scrolling behind header */
+	padding-bottom: 50px;
 }
 
-.contact {
-  height: 950px;
-  background: #cccccc center fixed;
+.about-me-box {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+  text-align: center;
+  width: 28%;
+  /*margin-top: 20px;*/
+  margin-left: 950px;
+  padding: 0 20px;
 }
+
+.separator-about {
+  border-bottom: 4px solid black;
+  width: 265px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  letter-spacing: .1em;
+}
+
+.about p {
+  font-size: 1.05rem;
+  line-height: 1.5em;
+}
+
+
+.contact {
+  height: 250px;
+  background: #cccccc center fixed;
+  padding-top: 30px;
+  padding-left: 375px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+  /*letter-spacing: .1em;*/
+}
+
+.separator-contact {
+  border-top: 4px solid black;
+  width: 265px;
+  margin-left: 0;
+  margin-bottom: 50px;
+}
+
+.social-contact {
+  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  font-size: 20px;
+  color: black;
+  margin: 4px;
+  padding: 25px 15px 13px 15px;
+}
+
+footer {
+  text-align: right;
+  margin-right: 300px;
+}
+
+footer a {
+  color: #1da1f2;
+}
+
+
+figure {
+  /*display: flex;*/
+  position: relative;
+  overflow: ;
+  /*margin: 0;*/
+}
+
+figcaption {
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  margin-bottom: 34px;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+.cap-left figcaption { bottom: 0; left: -30%; }
+.cap-left:hover figcaption { left: 0; }
